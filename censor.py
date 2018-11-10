@@ -1,6 +1,6 @@
 def censor(text, word):
-  asterisks = '*'
-  word = len(word) * asterisks
-
+  asterisksWord = len(word) * '*'
+  return text.replace(word, asterisksWord)
 
 print(censor('abece dede sksi dede', 'dede'))
+
