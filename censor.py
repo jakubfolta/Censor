@@ -21,9 +21,7 @@ def censor(text, word):
   censoredWord = len(word) * '*'
   splittedText = text.split()
   for index in range(len(splittedText)):
-    print(index)
-    if index == word:
-      print(index)
+    if splittedText[index] == word:
       splittedText[index] = censoredWord
   return ' '.join(splittedText)
 
