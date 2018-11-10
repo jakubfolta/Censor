@@ -6,7 +6,6 @@ def censor(text, word):
 print(censor('abece dede sksi dede', 'dede'))
 
 
-
 def censor(text, word):
   splittedText = text.split()
   asterisksWord = len(word) * '*'
@@ -16,4 +15,18 @@ def censor(text, word):
   return ' '.join(splittedText)
 
 print(censor('abece dede sksi dede', 'dede'))
+
+
+def censor(text, word):
+  censoredWord = len(word) * '*'
+  splittedText = text.split()
+  for index in range(len(splittedText)):
+    print(index)
+    if index == word:
+      print(index)
+      splittedText[index] = censoredWord
+  return ' '.join(splittedText)
+
+print(censor('abece dede sksi dede', 'dede'))
+    
 
