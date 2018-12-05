@@ -20,6 +20,7 @@ print(censor('abece dede sksi dede', 'dede'))
 def censor(text, word):
   censoredWord = len(word) * '*'
   splittedText = text.split()
+  print(splittedText)
   for index in range(len(splittedText)):
     if splittedText[index] == word:
       splittedText[index] = censoredWord
