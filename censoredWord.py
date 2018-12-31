@@ -5,5 +5,5 @@ def replaceCensoredWord(text, word):
       splittedText[index] = len(word) * '*'
   return ' '.join(splittedText)
 
-print(censor('abh dkkfir kvko keje kaka fnjeribv kaka', 'kaka'))
+print(replaceCensoredWord('abh dkkfir kvko keje kaka fnjeribv kaka', 'kaka'))
 
