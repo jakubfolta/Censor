@@ -15,8 +15,14 @@ def censor(text, word):
 print(censor('abh dkkfir kvko keje kaka fnjeribv kaka', 'kaka'))
 
 def replaceCensoredWord(text, word):
-  return text.replace((word, len(word) * '*') for x in text if x == word)
-
+  sameText = text.split()
+  for index, x in enumerate(sameText):
+    print(index)
+    if x == word:
+      sameText[index] = '*'
+  return ' '.join(sameText)
+    
+  
 print(replaceCensoredWord('abh dkkfir kala kvko keje kala fnjeribv kala', 'kala'))
   
 
