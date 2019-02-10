@@ -7,3 +7,13 @@ def replaceCensoredWord(text, word):
 
 print(replaceCensoredWord('abh dkkfir kvko keje kaka fnjeribv kaka', 'kaka'))
 
+
+def replaceCensoredWord(text, word):
+  copyText = list(text)
+  print(copyText)
+  for x in text:
+    if x == word:
+      x = len(word) * ('*')
+  return text
+
+print(replaceCensoredWord('abh dkkfir kvko keje kaka fnjeribv kaka', 'kaka'))
