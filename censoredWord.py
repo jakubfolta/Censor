@@ -17,3 +17,8 @@ def replaceCensoredWord(text, word):
   return ' '.join(text)
 
 print(replaceCensoredWord('abh dkkfir kvko keje kaka fnjeribv kaka', 'kaka'))
+
+def replaceCensoredWord(text, word):
+  return text.replace(word, len(word) * ('*'))
+
+print(replaceCensoredWord('abh dkkfir kvko keje kaka fnjeribv kaka', 'kaka'))
