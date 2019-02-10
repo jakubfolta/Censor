@@ -9,11 +9,11 @@ print(replaceCensoredWord('abh dkkfir kvko keje kaka fnjeribv kaka', 'kaka'))
 
 
 def replaceCensoredWord(text, word):
-  copyText = list(text)
-  print(copyText)
-  for x in text:
+  text = text.split()
+  print(text)
+  for index, x in enumerate(text):
     if x == word:
-      x = len(word) * ('*')
-  return text
+      text[index] = len(word) * ('*')
+  return ' '.join(text)
 
 print(replaceCensoredWord('abh dkkfir kvko keje kaka fnjeribv kaka', 'kaka'))
