@@ -35,3 +35,9 @@ def replaceCensoredWord(text, word):
 print(replaceCensoredWord('abece dede sksi fdsfr fdfds dede das dede dede', 'dede'))
     
 
+def splitText(text):
+  return text.split()
+
+def exchangeCensoredWord(text, word):
+  for x in splitText(text):
+    if x 
