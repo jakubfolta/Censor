@@ -27,5 +27,11 @@ def censor(text, word):
   return ' '.join(splittedText)
 
 print(censor('abece dede sksi dede', 'dede'))
+
+
+def replaceCensoredWord(text, word):
+  return text.replace(word, len(word) * '*')
+
+print(replaceCensoredWord('abece dede sksi fdsfr fdfds dede das dede dede', 'dede'))
     
 
