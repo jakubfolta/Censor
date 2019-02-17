@@ -38,6 +38,16 @@ print(replaceCensoredWord('abece dede sksi fdsfr fdfds dede das dede dede', 'ded
 def splitText(text):
   return text.split()
 
+def joinSplittedText(text):
+  return ' '.join(text)
+
 def exchangeCensoredWord(text, word):
-  for x in splitText(text):
-    if x 
+  splittedText = splitText(text)
+  for index, x in enumerate(splittedText):
+    if x == word:
+      splittedText[index] = len(word) * '*'
+  return joinSplittedText(splittedText)
+
+
+print(exchangeCensoredWord('abece dede sksi fdsfr fdfds dede das dede dede', 'dede'))
+
