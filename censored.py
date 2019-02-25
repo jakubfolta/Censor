@@ -40,7 +40,11 @@ def remove_censored_word(text, word):
 
 print(remove_censored_word('abh dkkfir kala kvko keje kala fnjeribv kala', 'kala'))
       
-  
+
+def replace_censored_word(text, word): 
+  return text.replace(word, len(word) * '*')
+
+print(replace_censored_word('abh dkkfir kala kvko keje kala fnjeribv kala', 'kala'))
 
 
 
