@@ -47,22 +47,15 @@ def replace_censored_word(text, word):
 print(replace_censored_word('abh dkkfir kala kvko keje kala fnjeribv kala', 'kala'))
 
 
+def replace_censored_word(text, word):
+  splitted_text = text.split()
+  censored = len(word) * '$'
+  for index, x in enumerate(splitted_text):
+    if x == word:
+      splitted_text[index] = censored
+  return ' '.join(splitted_text)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(replace_censored_word('abh dkkfir kvko keje kaka fnjeribv kaka', 'kaka'))
 
 
 def replaceCensoredWord(text, word):
