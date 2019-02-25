@@ -31,6 +31,17 @@ def replaceCensoredWord(text, word):
 print(replaceCensoredWord('abh dkkfir kala kvko keje kala fnjeribv kala', 'kala'))
 
 
+def remove_censored_word(text, word):
+  splitted_text = text.split()
+  for x in splitted_text[:]:
+    if x == word:
+      splitted_text.remove(x)
+  return ' '.join(splitted_text)
+
+print(remove_censored_word('abh dkkfir kala kvko keje kala fnjeribv kala', 'kala'))
+      
+  
+
 
 
 
