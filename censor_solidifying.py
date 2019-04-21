@@ -19,7 +19,7 @@ def censor(text, censor_word):
     text = text.split()
 
     for x in text:
-        text[text.index(x)] = censor if x == censor_word else text[text.index(x)] = x
+        text[text.index(x)] = censor if x == censor_word else x
         # if x == censor_word:
         #     text[text.index(x)] = censor
     return ' '.join(text)
