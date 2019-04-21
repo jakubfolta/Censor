@@ -10,6 +10,18 @@ def censor(text, censor_word):
     for index, x in enumerate(text):
         if x == censor_word:
             text[index] = censor
-            print(text)
-        #text[x] = censor if x == censor_word else text[x] = x
+    return ' '.join(text)
+
+print(censor('sadsad kala abhdhd ufhdjw kala fdsf kala', 'kala'))
+
+def censor(text, censor_word):
+    censor = len(censor_word) * '*'
+    text = text.split()
+
+    for x in text:
+        text[text.index(x)] = censor if x == censor_word else text[text.index(x)] = x
+        # if x == censor_word:
+        #     text[text.index(x)] = censor
+    return ' '.join(text)
+
 print(censor('sadsad kala abhdhd ufhdjw kala fdsf kala', 'kala'))
