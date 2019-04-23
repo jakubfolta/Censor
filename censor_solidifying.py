@@ -20,8 +20,6 @@ def censor(text, censor_word):
 
     for x in text:
         text[text.index(x)] = censor if x == censor_word else x
-        # if x == censor_word:
-        #     text[text.index(x)] = censor
     return ' '.join(text)
 
 print(censor('sadsad kala abhdhd ufhdjw kala fdsf kala', 'kala'))
